@@ -12,3 +12,16 @@ function hasUniqueChars(wordToCheck) {
     }
     return true;
 }
+
+function eghaSolution(word) {
+    let uniqueChars = new Set([])
+    let splitWord = word.split('');
+
+    for(let i = 0; i <splitWord.length; i++) {
+        uniqueChars.add(splitWord[i])
+    }
+
+    return uniqueChars.size === splitWord.length;
+}
+
+console.log(eghaSolution("sobo"));
