@@ -25,3 +25,7 @@ function eghaSolution(word) {
 }
 
 console.log(eghaSolution("sobo"));
+
+const jaredSolution = (str) => (new Set(str)).size === str.length
+
+console.log(jaredSolution('Monday'))
